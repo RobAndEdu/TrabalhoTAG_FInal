@@ -1,0 +1,303 @@
+{
+  "bytes": 1388364,
+  "datahub": {
+    "created": "2018-08-24T03:39:54.071945",
+    "findability": "published",
+    "flowid": "machine-learning/abalone/5",
+    "modified": "2018-09-06T12:18:21.486059",
+    "owner": "machine-learning",
+    "ownerid": "machine-learning"
+  },
+  "description": "The resources for this dataset can be found at https://www.openml.org/d/183\n\nAuthor:   \nSource: Unkn",
+  "hash": "cf4631070c9dd8d27818d5dfb65badb0",
+  "id": "machine-learning/abalone",
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "name": "abalone",
+  "resources": [
+    {
+      "bytes": 192330,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/a9555b1cfe39eb55df2c520f09172a96.arff",
+      "encoding": "ISO-8859-1",
+      "format": "arff",
+      "name": "abalone_arff",
+      "path": "archive/abalone_arff.arff",
+      "pathType": "local",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 191978,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/dc2ecfb999b9c9dc9fa4f20f6d30c9a9.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "abalone_original",
+      "path": "archive/abalone.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Length",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Diameter",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Height",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Whole_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Shucked_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Viscera_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Shell_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Class_number_of_rings",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 682,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpaphkrndh/machine-learning/abalone/validation_report/data/7d618305afbb2ed6401af7b1fc7af8ca/validation_report.json",
+      "format": "json",
+      "hash": "7d618305afbb2ed6401af7b1fc7af8ca",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 196156,
+      "datahub": {
+        "derivedFrom": [
+          "abalone"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpaphkrndh/machine-learning/abalone/abalone_csv/data/dc2ecfb999b9c9dc9fa4f20f6d30c9a9/abalone_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "dc2ecfb999b9c9dc9fa4f20f6d30c9a9",
+      "mediatype": "text/csv",
+      "name": "abalone_csv",
+      "path": "data/abalone_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 4177,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Sex",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Length",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Diameter",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Height",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Whole_weight",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Shucked_weight",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Viscera_weight",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Shell_weight",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Class_number_of_rings",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 801722,
+      "datahub": {
+        "derivedFrom": [
+          "abalone"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpaphkrndh/machine-learning/abalone/abalone_json/data/456f09c39f332569f23890efbfea5cff/abalone_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "456f09c39f332569f23890efbfea5cff",
+      "mediatype": "text/csv",
+      "name": "abalone_json",
+      "path": "data/abalone_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 4177,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Length",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Diameter",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Height",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Whole_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Shucked_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Viscera_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Shell_weight",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Class_number_of_rings",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 5496,
+      "dpp:streamedFrom": "/tmp/tmp3u7yl7b4/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "Abalone"
+}
